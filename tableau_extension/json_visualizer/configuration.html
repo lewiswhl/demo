@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Selection Dropdown</title>
+  <link rel="stylesheet" href="../lib/bootstrap.min.css" >
+  <!-- <link rel="stylesheet" href="./style.css" > -->
+  <style>
+    .container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .container > div {
+      flex: 1;
+      margin-right: 10px;
+    }
+  </style>
+  <script src="../lib/jquery-3.2.1.min.js"></script><!-- jQuery -->
+  <script src="../lib/tableau.extensions.1.latest.js"></script>
+</head>
+
+<body>
+  <div hidden="true">
+    <p id="t1">1</p>
+    <p id="t2">2</p>
+    <p id="t3">3</p>
+    <p id="t4">4</p>
+    <p id="t5">5</p>
+  </div>
+
+  <h2>Worksheet and JSON Field to be Tracked</h2>
+  <div class="container">
+    <div>
+      <h4>Worksheet</h4>
+      <select multiple class="form-select" id="dropdown_worksheet">
+      </select>
+    </div>
+
+    <div>
+      <h4>Field</h4>
+      <select multiple class="form-select" id="dropdown_field">
+      </select>
+    </div>
+  </div>
+
+  <h2>JSON Crack Option</h2>
+  <div class="container">
+    <div>
+      <h4>Theme</h4>
+      <select multiple class="form-select" id="dropdown_theme">
+        <option>light</option>
+        <option>dark</option>
+      </select>
+    </div>
+    
+    <div>
+      <h4>Tree Direction</h4>
+      <select multiple class="form-select" id="dropdown_direction">
+        <option>UP</option>
+        <option>DOWN</option>
+        <option>LEFT</option>
+        <option>RIGHT</option>
+      </select>
+    </div>
+  </div>
+
+  <button class="btn btn-success" type="submit" id="subbutton">Submit (Ensure all dropdown has single value selected!)</button>
+
+  <script src="./configuration.js"></script>
+</body>
+</html>

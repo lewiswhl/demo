@@ -1,5 +1,5 @@
 # demo
-To demostrate some features from a code level perpesctive
+To demonstrate some features from a code level perspective
 
 ## Projects
 - Parquet to Hyper
